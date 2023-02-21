@@ -1,0 +1,57 @@
+/*
+My son Priyanshu got an assignment from his teacher to perform multiplication of complex number. Help him to complete his assignment. Write a java code with following features: class Name: Complex Instance Variable: real, imaginary (int type) Constructor: ** 1. Complex() 2. Complex(int, int)
+**Instance Method: 1. Mul_Complex(Complex, Complex) 2. Display() Read the real and imaginary from user and pass to the constructor as parameter Write a separate class Test_Complex with a main() method and test the Complex class methods
+
+Input Format
+First line Read the complex number 1 for real and imaginary First line Read the complex number 2 for real and imaginary
+
+Constraints
+real, imaginary > 1
+
+Output Format
+Print the Result in form of complex number : a+bi
+
+Sample Input 0
+2 3
+4 5
+
+Sample Output 0
+-7+22i
+
+Sample Input 1
+0 1
+2 3
+
+Sample Output 1
+-3+2i
+*/
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+class Complex
+{
+    int real, imaginary;
+    Complex(){};
+    Complex(int r,int i)
+    {real=r;imaginary=i;};
+}
+
+public class Solution {
+    static void Mul_Complex(Complex o1,Complex o2)
+    {
+        int r=(o1.real*o2.real)-(o1.imaginary*o2.imaginary);
+        int i=(o1.real*o2.imaginary)+(o1.imaginary*o2.real);
+        System.out.println(r+"+"+i+"i");
+    }
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner Sc=new Scanner(System.in);
+        Complex C1=new Complex(Sc.nextInt(),Sc.nextInt());
+        Complex C2=new Complex(Sc.nextInt(),Sc.nextInt());
+        Mul_Complex(C1,C2);
+    }
+}
