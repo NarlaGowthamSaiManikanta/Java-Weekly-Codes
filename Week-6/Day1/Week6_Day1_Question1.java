@@ -1,29 +1,3 @@
-/*
-Richa and her daughter Ahaana are playing a game. Richa is going to tell one number and Ahaana need to tell the prime factors of the number. Help Ahaana by completing the code to find prime factor of the number. Write a method which calculate prime factors and print and call the method in main.
-
-Input Format
-An integer value
-
-Constraints
-N will lie between 10-50 else "Invalid"
-
-Output Format
-All the prime factors will be printed exactly once with space in increasing order.
-
-Sample Input 0
-8
-
-Sample Output 0
-Invalid
-
-Sample Input 1
-30
-
-Sample Output 1
-2 3 5
-*/
-
-
 import java.io.*;
 import java.util.*;
 import java.text.*;
