@@ -1,30 +1,3 @@
-/*
-Accpet one array of stings with all alphabets or integers string and count the number of alphabets or integers string present in the array.
-
-Input Format
-First line accepts the size of the array(n) Second line accepts the n elements.
-
-Constraints
-The array is String type n>0 else "Invalid"
-
-Output Format
-First line print the number of Integer strings present Second line prints the number of Alphabet strings present
-
-Sample Input 0
-5
-Raj 77 101 99 Jio
-
-Sample Output 0
-3
-2
-
-Sample Input 1
-0
-
-Sample Output 1
-Invalid
-*/
-
 import java.io.*;
 import java.util.*;
 import java.text.*;
